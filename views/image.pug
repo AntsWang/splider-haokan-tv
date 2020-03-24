@@ -1,0 +1,9 @@
+meta(name="referrer" content="no-referrer")
+meta(http-equiv="Content-Disposition" content="attachment;")
+body
+    div
+        each val, index in imgUrls
+           if val
+               div
+                    a(href=val.url target="_blank") #{val.title}
+               
